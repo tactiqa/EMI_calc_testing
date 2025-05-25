@@ -27,12 +27,14 @@ const test = baseTest.extend({
     
     // Handle consent if it appears
     try {
-      await page.getByRole('button', { name: 'Consent' }).click();
+      const consentButton = page.getByRole('button', { name: 'Consent' });
+      await expect(consentButton).toBeVisible({ timeout: 5000 });
+      await consentButton.click();
       await page.waitForLoadState('networkidle');
-      console.log('Saved new browser state');
+      console.log('Consent given and browser state saved');
       await context.storageState({ path: statePath });
     } catch (error) {
-      console.log('No consent screen found');
+      console.log('No consent screen found or not visible');
     }
     
     await use(page);
