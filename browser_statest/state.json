@@ -1,202 +1,35 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.613013217.1748184806",
+      "name": "_ga_2PGC8B3N0F",
+      "value": "GS2.1.s1748185802$o1$g0$t1748185802$j60$l0$h0$dg8XZa9OrOVJhw_XNly-fupdP8Zqw_WP-Lg",
       "domain": ".emicalculator.net",
       "path": "/",
-      "expires": 1782744805.619329,
+      "expires": 1782745802.447331,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1549410482.1748185802",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1782745802.449496,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "FCCDCF",
-      "value": "%5Bnull%2Cnull%2Cnull%2C%5B%22CQR96cAQR96cAEsACBENBsFoAP_gAEPgABBoINJD7C7FbSFCyD5zaLsAMAhHRsAAQoQAAASBAmABQAKQIAQCgkAYFASABAACAAAAICRBIQIECAAAAUAAQAAAAAAEAAAAAAAIIAAAgAEAAAAIAAACAIAAEAAIAAAAEAAAmAgAAIIACAAAgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAQNVSD2F2K2kKFkHCmwXYAYBCujYAAhQgAAAkCBMACgAUgQAgFJIAgCIEAAAAAAAAAQEiCQAAQABAAAIACgAAAAAAIAAAAAAAQQAABAAIAAAAAAAAEAQAAIAAQAAAAIAABEhAAAQQAEAAAAAAAQAAA%22%2C%222~70.89.93.108.122.149.184.196.236.259.311.313.314.323.358.415.442.486.494.495.540.574.609.723.864.981.1029.1048.1051.1095.1097.1126.1205.1276.1301.1365.1415.1449.1514.1570.1577.1598.1651.1716.1735.1753.1765.1870.1878.1889.1958.1960.2072.2253.2299.2373.2415.2506.2526.2531.2568.2571.2575.2624.2677.2778~dv.%22%2C%22A013E56D-357D-48D6-B49E-A4987C1385C5%22%5D%5D",
+      "value": "%5Bnull%2Cnull%2Cnull%2C%5B%22CQR96cAQR96cAEsACBENBsFoAP_gAEPgABBoINJD7C7FbSFCyD5zaLsAMAhHRsAAQoQAAASBAmABQAKQIAQCgkAYFASABAACAAAAICRBIQIECAAAAUAAQAAAAAAEAAAAAAAIIAAAgAEAAAAIAAACAIAAEAAIAAAAEAAAmAgAAIIACAAAgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAQNVSD2F2K2kKFkHCmwXYAYBCujYAAhQgAAAkCBMACgAUgQAgFJIAgCIEAAAAAAAAAQEiCQAAQABAAAIACgAAAAAAIAAAAAAAQQAABAAIAAAAAAAAEAQAAIAAQAAAAIAABEhAAAQQAEAAAAAAAQAAA%22%2C%222~70.89.93.108.122.149.184.196.236.259.311.313.314.323.358.415.442.486.494.495.540.574.609.723.864.981.1029.1048.1051.1095.1097.1126.1205.1276.1301.1365.1415.1449.1514.1570.1577.1598.1651.1716.1735.1753.1765.1870.1878.1889.1958.1960.2072.2253.2299.2373.2415.2506.2526.2531.2568.2571.2575.2624.2677.2778~dv.%22%2C%2281AD7695-4075-475F-95E7-6A73781A04B8%22%5D%5D",
       "domain": ".emicalculator.net",
       "path": "/",
-      "expires": 1781880808,
+      "expires": 1781881805,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "IDE",
-      "value": "AHWqTUm3p9ukwSbEDSYvwkpHukPgAAhw-v4w_4HQ6W7KSSxgndd4RiBcmiOTu6x3",
-      "domain": ".doubleclick.net",
-      "path": "/",
-      "expires": 1781880809.92707,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__gads",
-      "value": "ID=9ce33c9dab6993cb:T=1748184809:RT=1748184809:S=ALNI_MbKDmMieXMYts_pAx0xwk07nfijyw",
-      "domain": ".emicalculator.net",
-      "path": "/",
-      "expires": 1781880809,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__gpi",
-      "value": "UID=000010ca75624d45:T=1748184809:RT=1748184809:S=ALNI_Mafn4gAj3b3bsmVn90j1QXi5-8w8g",
-      "domain": ".emicalculator.net",
-      "path": "/",
-      "expires": 1781880809,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__eoi",
-      "value": "ID=66c06921b0e1af46:T=1748184809:RT=1748184809:S=AA-Afjbi7eD-H6swyL-DH_6vjZzu",
-      "domain": ".emicalculator.net",
-      "path": "/",
-      "expires": 1763736809,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "FCNEC",
-      "value": "%5B%5B%22AKsRol_5zZ64UdW2ypUpAeU936lKbBoRkqUnhYycYWSv1jKLsji29EOVml10xxcIdVChYxjLTIh3SHNxVMuOdgzVIxZSR1HF-hgEMP0alHI_UfB1fauCDbWnRM6YSyvbtsAXfcJQVqnTbOc-FTZV9aJZ-tIYw8xqUg%3D%3D%22%5D%5D",
-      "domain": ".emicalculator.net",
-      "path": "/",
-      "expires": 1779720810,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "CMID",
-      "value": "aDMu6rmqPKoAKSIEAqBjPgAA",
-      "domain": ".casalemedia.com",
-      "path": "/",
-      "expires": 1779720811.795591,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "CMPS",
-      "value": "2139",
-      "domain": ".casalemedia.com",
-      "path": "/",
-      "expires": 1755960810.502321,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "CMPRO",
-      "value": "2139",
-      "domain": ".casalemedia.com",
-      "path": "/",
-      "expires": 1755960811.795765,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "XANDR_PANID",
-      "value": "UqwetUDe0XoPc6MHhlHzRdMLCO2Lm2kYvWtQGln_m3GJqQGrKBL3Wa801TaW4YktC1lNZOWt2KJVckNwuz2Rs40er6rOhAVasB2i7hJFMOo.",
-      "domain": ".adnxs.com",
-      "path": "/",
-      "expires": 1755960811.522853,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "uuid2",
-      "value": "5207932232769709832",
-      "domain": ".adnxs.com",
-      "path": "/",
-      "expires": 1755960811.523004,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_ga_2PGC8B3N0F",
-      "value": "GS2.1.s1748184805$o1$g0$t1748184811$j54$l0$h0$derqBQEfVzm_jRwByDCJ90oyhkEcaph_GxA",
-      "domain": ".emicalculator.net",
-      "path": "/",
-      "expires": 1782744811.187103,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "anj",
-      "value": "dTM7k!M41.D>6NRF']wIg2E>5u[V8Y!A#Fw.TOKKnyW<U1`VROYQM+PN7n]3D?*%waowISMt(c:a:aC'L.GeZb7ZZ_<QG=%9sk@3@'s>T4AV+D",
-      "domain": ".adnxs.com",
-      "path": "/",
-      "expires": 1755960811.522943,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "ar_debug",
-      "value": "1",
-      "domain": ".doubleclick.net",
-      "path": "/",
-      "expires": 1750776811.954886,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "receive-cookie-deprecation",
-      "value": "1",
-      "domain": ".doubleclick.net",
-      "path": "/",
-      "expires": 1763736811.954968,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "ar_debug",
-      "value": "1",
-      "domain": ".googleadservices.com",
-      "path": "/",
-      "expires": 1755960811.846814,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
     }
   ],
-  "origins": [
-    {
-      "origin": "https://emicalculator.net",
-      "localStorage": [
-        {
-          "name": "google_adsense_settings",
-          "value": "{\"ca-pub-6020664305604651\":[\"ca-pub-6020664305604651\"]}"
-        },
-        {
-          "name": "google_ama_config",
-          "value": "[[[[null,0,null,[],null,null,\"BODY>FOOTER.content-info\"],1,[\"10px\",\"10px\",1],[0],null,[],[],1,[],[2,4]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_search\"],4,[\"30px\",\"30px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_nav_menu\"],4,[\"30px\",\"30px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_recent_entries\"],4,[\"10px\",\"30px\",1],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_search\"],1,[\"10px\",\"30px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],2,[\"10px\",\"10px\",1],[4],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],3,[\"10px\",\"10px\",1],[5],null,[],[],1,[],[5]],[[null,0,null,[],null,null,\"BODY>DIV.wrap.container>DIV.content.row\"],4,[\"10px\",\"10px\",1],[3],null,[],[],1,[],[5]],[[null,0,null,[],null,null,\"HEADER\"],4,[\"10px\",\"20px\",1],[2],null,[],[],1,[],[]]],[],[1748271209646],\"20250521_083427\",[],[[[[null,0,null,[],null,null,\"DIV.entry-content>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV#amortizationscheduleheader\"],[null,null,null,[]]],[[null,null,null,[],null,null,\"DIV#panel-7-0-0-0>DIV.so-widget-sow-editor.so-widget-sow-editor-base>DIV.siteorigin-widget-tinymce.textwidget>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV#panel-7-0-0-0>DIV.so-widget-sow-editor.so-widget-sow-editor-base>DIV.siteorigin-widget-tinymce.textwidget\"],[null,null,null,[],null,null,\"BLOCKQUOTE,P\"],null,[null,null,null,[],null,null,\"BLOCKQUOTE,H2,IMG.size-full.alignleft,LI,P\"]],[[null,1,null,[],null,null,\"DIV.entry-content>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV.entry-content>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV.entry-content\"],[null,null,null,[],null,null,\"BLOCKQUOTE,P\"],null,[null,null,null,[],null,null,\"BLOCKQUOTE,H2,LI,P\"]]]],[[null,[1,3,2],null,\"5132069326\",[],[],[0,2],null,null,[0,null,1],[]]],[null,[[1,\"1vp\",[[4,\"2vp\",\"2vp\"],[6,\"3vp\",\"3vp\"]],8,\"1vp\",0.30000001,[\"0.2vp\",\"0vp\",2]],[2,\"300px\",[[4,\"600px\",\"600px\"],[6,\"900px\",\"900px\"]],8,\"300px\",0.30000001,[\"60px\",\"0px\",2]]]],null,null,null,null,null,null,[null,null,null,null,null,null,null,null,null,null,null,0],null,null,[1,null,null,[]],null,[927457154],null,null,[1748053067204],null,null,null,null,null,null,null,null,null,[[\"Toggle toolbar expansion\",\"Toggle privacy and legal settings display\",\"Dismiss privacy and legal settings display\"]]]"
-        },
-        {
-          "name": "google_ama_settings",
-          "value": "[1748271209755,1]"
-        }
-      ]
-    },
-    {
-      "origin": "https://www.google.com",
-      "localStorage": [
-        {
-          "name": "rc::h",
-          "value": "1748184809682"
-        }
-      ]
-    }
-  ]
+  "origins": []
 }
