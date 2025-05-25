@@ -1,0 +1,222 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.1978875232.1748186584",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1782746583.86394,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "FCCDCF",
+      "value": "%5Bnull%2Cnull%2Cnull%2C%5B%22CQR96cAQR96cAEsACBENBsFoAP_gAEPgABBoINJD7C7FbSFCyD5zaLsAMAhHRsAAQoQAAASBAmABQAKQIAQCgkAYFASABAACAAAAICRBIQIECAAAAUAAQAAAAAAEAAAAAAAIIAAAgAEAAAAIAAACAIAAEAAIAAAAEAAAmAgAAIIACAAAgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAQNVSD2F2K2kKFkHCmwXYAYBCujYAAhQgAAAkCBMACgAUgQAgFJIAgCIEAAAAAAAAAQEiCQAAQABAAAIACgAAAAAAIAAAAAAAQQAABAAIAAAAAAAAEAQAAIAAQAAAAIAABEhAAAQQAEAAAAAAAQAAA%22%2C%222~70.89.93.108.122.149.184.196.236.259.311.313.314.323.358.415.442.486.494.495.540.574.609.723.864.981.1029.1048.1051.1095.1097.1126.1205.1276.1301.1365.1415.1449.1514.1570.1577.1598.1651.1716.1735.1753.1765.1870.1878.1889.1958.1960.2072.2253.2299.2373.2415.2506.2526.2531.2568.2571.2575.2624.2677.2778~dv.%22%2C%2228FB19BC-B646-4FE6-850C-C14437BF7EBD%22%5D%5D",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1781882586,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUkE9g-1wGo9R30VtjTtR4akKl8BO1_Q53ZhiTXb9-sX2F-sTWQC8vrbSmZB",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1781882587.563437,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "CMID",
+      "value": "aDM13LmqPUgAGcKBAnyBOwAA",
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "expires": 1779722592.15181,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "CMPS",
+      "value": "3171",
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "expires": 1755962588.146576,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "CMPRO",
+      "value": "3171",
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "expires": 1755962592.151887,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "XANDR_PANID",
+      "value": "fZDd0wcMz2ui6EfKiGMukJOr2SCe2cacMHWpZ18rGcfrBIUhw6F_vUX3400mo7maw5VP02G7SF-6cDpcsUmeAApZk6d356k-j66VLu0vYDo.",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1755962592.045963,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "uuid2",
+      "value": "5729681962335342398",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1755962592.046085,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "FCNEC",
+      "value": "%5B%5B%22AKsRol-s2ERkXAdt6to2CGE5mOo0r_3n6xTm_Pk_-__3K4tqJTZO9L3cGPeKZX-tnMyQqrW2I0XI1thGGuQkLLQA52tZuPAcvnpzxWGX-QPOFj7BVF1jSyZR1_BSI5J73Y_4jxhXZ2t5JNTMeZfiWdH5zOA71OiNSQ%3D%3D%22%5D%5D",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1779722588,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__gads",
+      "value": "ID=6711c70880728b25:T=1748186587:RT=1748186587:S=ALNI_MZ9CoarLhJioG1tKgdLtT4UWAjIfg",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1781882587,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__gpi",
+      "value": "UID=000010ca76438a6a:T=1748186587:RT=1748186587:S=ALNI_MZOI_2CdIMBR-nY9Hdx7ccRJF274A",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1781882587,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=3e16a752c6bcbbc8:T=1748186587:RT=1748186587:S=AA-AfjZ0rw7zpf1kcgwqMGcCa4J2",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1763738587,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ar_debug",
+      "value": "1",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1750778592.519523,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "receive-cookie-deprecation",
+      "value": "1",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1763738592.519629,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ar_debug",
+      "value": "1",
+      "domain": ".googleadservices.com",
+      "path": "/",
+      "expires": 1755962589.70386,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_2PGC8B3N0F",
+      "value": "GS2.1.s1748186583$o1$g0$t1748186591$j52$l0$h0$d09XGB1sUPXeM6wSwVvWFeACgvyOcrnolww",
+      "domain": ".emicalculator.net",
+      "path": "/",
+      "expires": 1782746591.790374,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "anj",
+      "value": "dTM7k!M41.D>6NRF']wIg2GVJvXRT]!A#Ed.TOKKnyW<U1`VROYQM-:A)5O!DrLIN_cJa):=I?bL#JRZ:cl-gk7TX!<QG=%9sk@3@'s>T.B7OR",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1755962592.046041,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "i",
+      "value": "39ed930d-3901-4999-83ae-2d460f99e72f|1748186592",
+      "domain": ".openx.net",
+      "path": "/",
+      "expires": 1779722592.503677,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tt_viewer",
+      "value": "17dccd7c-4fd3-4637-a1d4-b3dffe09641a",
+      "domain": ".teads.tv",
+      "path": "/",
+      "expires": 1779636192.624436,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://emicalculator.net",
+      "localStorage": [
+        {
+          "name": "google_adsense_settings",
+          "value": "{\"ca-pub-6020664305604651\":[\"ca-pub-6020664305604651\"]}"
+        },
+        {
+          "name": "google_ama_config",
+          "value": "[[[[null,0,null,[],null,null,\"BODY>FOOTER.content-info\"],1,[\"10px\",\"10px\",1],[0],null,[],[],1,[],[2,4]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_search\"],4,[\"30px\",\"30px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_nav_menu\"],4,[\"30px\",\"30px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_recent_entries\"],4,[\"10px\",\"30px\",1],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"ASIDE.sidebar>SECTION.widget.widget_search\"],1,[\"10px\",\"30px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],2,[\"10px\",\"10px\",1],[4],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],3,[\"10px\",\"10px\",1],[5],null,[],[],1,[],[5]],[[null,0,null,[],null,null,\"BODY>DIV.wrap.container>DIV.content.row\"],4,[\"10px\",\"10px\",1],[3],null,[],[],1,[],[5]],[[null,0,null,[],null,null,\"HEADER\"],4,[\"10px\",\"20px\",1],[2],null,[],[],1,[],[]]],[],[1748272989503],\"20250521_083427\",[],[[[[null,0,null,[],null,null,\"DIV.entry-content>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV#amortizationscheduleheader\"],[null,null,null,[]]],[[null,null,null,[],null,null,\"DIV#panel-7-0-0-0>DIV.so-widget-sow-editor.so-widget-sow-editor-base>DIV.siteorigin-widget-tinymce.textwidget>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV#panel-7-0-0-0>DIV.so-widget-sow-editor.so-widget-sow-editor-base>DIV.siteorigin-widget-tinymce.textwidget\"],[null,null,null,[],null,null,\"BLOCKQUOTE,P\"],null,[null,null,null,[],null,null,\"BLOCKQUOTE,H2,IMG.size-full.alignleft,LI,P\"]],[[null,1,null,[],null,null,\"DIV.entry-content>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV.entry-content>UL\"],[null,null,null,[],null,null,\"LI\"],null,[null,null,null,[],null,null,\"LI\"]],[[null,null,null,[],null,null,\"DIV.entry-content\"],[null,null,null,[],null,null,\"BLOCKQUOTE,P\"],null,[null,null,null,[],null,null,\"BLOCKQUOTE,H2,LI,P\"]]]],[[null,[1,3,2],null,\"5132069326\",[],[],[0,2],null,null,[0,null,1],[]]],[null,[[1,\"1vp\",[[4,\"2vp\",\"2vp\"],[6,\"3vp\",\"3vp\"]],8,\"1vp\",0.30000001,[\"0.2vp\",\"0vp\",2]],[2,\"300px\",[[4,\"600px\",\"600px\"],[6,\"900px\",\"900px\"]],8,\"300px\",0.30000001,[\"60px\",\"0px\",2]]]],null,null,null,null,null,null,[null,null,null,null,null,null,null,null,null,null,null,0],null,null,[1,null,null,[]],null,[927457154],null,null,[1748053067204],null,null,null,null,null,null,null,null,null,[[\"Toggle toolbar expansion\",\"Toggle privacy and legal settings display\",\"Dismiss privacy and legal settings display\"]]]"
+        },
+        {
+          "name": "google_ama_settings",
+          "value": "[1748272989647,1]"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::h",
+          "value": "1748186588284"
+        }
+      ]
+    }
+  ]
+}
