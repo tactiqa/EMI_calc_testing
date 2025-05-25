@@ -1,5 +1,5 @@
 const { test, expect } = require('../fixtures/emiCalculator.fixture');
-const { calculateEMIDetails } = require('../helper/loanEMICalculator');
+const { calculateEMIDetails } = require('../helper/homeLoanEMICalculator');
 
 // Test cases array
 const testCases = [
