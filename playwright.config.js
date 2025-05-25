@@ -27,22 +27,44 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://localhost:3000',
+    // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
 
-  /* Configure projects for major browsers */
+  /* Configure projects */
   projects: [
+    // Browser tests - will run on both Chromium and Firefox
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      testMatch: '**/*.spec.js',  // Matches all test files
+      testIgnore: '**/api/*.spec.js',  // Exclude API tests
+      use: { 
+        ...devices['Desktop Chrome'],
+        viewport: { width: 1920, height: 1080 },
+        headless: true,  // Set to true for CI
+        screenshot: 'on',
+      },
     },
-
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      testMatch: '**/*.spec.js',  // Matches all test files
+      testIgnore: '**/api/*.spec.js',  // Exclude API tests
+      use: { 
+        ...devices['Desktop Firefox'],
+        viewport: { width: 1920, height: 1080 },
+        headless: true,  // Set to true for CI
+        screenshot: 'on',
+      },
+    },
+    // API tests - will run without browser
+    {
+      name: 'api',
+      testMatch: '**/api/*.spec.js',  // Only matches API test files
+      use: {
+        baseURL: 'https://reqres.in/api',
+      },
     },
 
     // {
@@ -74,7 +96,7 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   // webServer: {
   //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
+  //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
 });
