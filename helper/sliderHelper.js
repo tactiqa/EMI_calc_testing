@@ -15,9 +15,6 @@ async function setSliderValue(page, sliderSelector, value, fieldName, minValue, 
     await input.fill(value.toString());
     await input.press('Enter');
     
-    // Wait for the slider to update
-    // await page.waitForTimeout(500);
-    
     // Then adjust using the slider for any visual updates
     const slider = page.locator(sliderSelector);
     const sliderBoundingBox = await slider.boundingBox();
