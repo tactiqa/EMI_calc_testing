@@ -83,7 +83,7 @@ npx playwright test --headed
   - `home-loan-with-saved-state.spec.js` - Tests for home loan EMI calculations
   - `emichart-read-bars.spec.js` - Tests for personal loan EMI chart visualization
   - `emichart-read-bars-with-sliders.spec.js` - Tests for personal loan chart with slider interactions
-  - `api/verify-users-api.spec.js` - Example API tests
+  - `api/verify-users-api.spec.js` - API test - users response verification
 - `fixtures/` - Contains test fixtures, test data, and browser state files:
   - `emiCalculator.fixture.js` - Playwright test fixture for EMI Calculator tests:
     - Handles browser context setup and teardown

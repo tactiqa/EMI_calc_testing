@@ -8,10 +8,10 @@ const testCases = [
   {
     name: 'Personal Loan 1',
     loanAmount: '1000000',
-    interestRate: '11',
+    interestRate: '12',
     loanTenure: '5',
-    startMonth: 'May',
-    toolTipNumber: 3
+    startMonth: 'Aug',
+    toolTipNumber: 2
   },
   // {
   //   name: 'Personal Loan 2',
@@ -43,10 +43,6 @@ test.describe('EMI Chart Tooltip Test with Sliders', () => {
       // Initial check of the chart state
       const initialEmiBarChart = page.locator('#emibarchart');
       console.log('Found initial emibarchart div on the page');
-          
-      // Take initial screenshot  - in case of debugging
-      // await initialEmiBarChart.screenshot({ path: `logs/initial-emibarchart-${testCase.name.replace(/\s+/g, '-').toLowerCase()}.png` });
-      // console.log(`Initial screenshot saved to logs/initial-emibarchart-${testCase.name.replace(/\s+/g, '-').toLowerCase()}.png`);
       
       // Capture series group state before pressing Enter
       const initialSeriesGroupHTML = await page.evaluate(() => {
@@ -113,20 +109,6 @@ test.describe('EMI Chart Tooltip Test with Sliders', () => {
       await element.hover({ force: true });
       console.log(`Hovered over chart element ${toolTipNumber} of ${series1ChildrenCount}`);
     
-      // Save the HTML content of #emibarchart - in case of debugging
-
-      // const emiBarChart = page.locator('#emibarchart');
-      // const emiBarChartHTML = await emiBarChart.evaluate(el => el.outerHTML);
-      // const htmlPath = `logs/emibarchart-hover-${toolTipNumber}.html`;
-      // await fs.promises.writeFile(htmlPath, emiBarChartHTML);
-      // console.log(`HTML saved to ${htmlPath}`);
-    
-      // Take screenshot of the entire emibarchart - in case of debugging
-
-      // const screenshotPath = `logs/emibarchart-hover-${toolTipNumber}.png`;
-      // await emiBarChart.screenshot({ path: screenshotPath });
-      // console.log(`Screenshot saved to ${screenshotPath}`);
-    
       // Wait for tooltip to be visible
       const tooltip = page.locator('#emibarchart .highcharts-tooltip');
       await tooltip.waitFor({ state: 'visible' });
@@ -181,10 +163,6 @@ test.describe('EMI Chart Tooltip Test with Sliders', () => {
 
         console.log('\n✅ All values matched successfully!');
       }
-      // // Take screenshot of the tooltip
-      // const tooltipScreenshotPath = `logs/emibarchart-tooltip-${testCase.name.replace(/\s+/g, '-').toLowerCase()}.png`;
-      // await tooltip.screenshot({ path: tooltipScreenshotPath });
-      // console.log(`\nTooltip screenshot saved to ${tooltipScreenshotPath}`);
     });
   });
 });

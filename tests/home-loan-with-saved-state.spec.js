@@ -46,7 +46,6 @@ test.describe('EMI Calculator Tests', () => {
         const path = document.querySelector('#emipiechart path[fill]');
         return path ? path.getAttribute('d') : null;
       });
-      // console.log('Initial SVG path value:', initialPathValue);
 
       // Extract a unique part of the path to wait for change
       let pathCheckValue = '';
@@ -101,11 +100,6 @@ test.describe('EMI Calculator Tests', () => {
       const principalPercentage = parseFloat(percentageTexts[0]);
       const interestPercentage = parseFloat(percentageTexts[1]);
 
-      // Force a failure by modifying principalPercentage
-      // let principalPercentage = parseFloat(percentageTexts[0]);
-      // const interestPercentage = parseFloat(percentageTexts[1]);
-      // principalPercentage += 0.1;
-
       console.log('\nFinal Chart Values:');
       console.log(`- Principal amount: ${principalPercentage}%`);
       console.log(`- Interest amount: ${interestPercentage}%`);
@@ -115,11 +109,6 @@ test.describe('EMI Calculator Tests', () => {
       console.log('\nExpected Values (Calculated by emi_calc helper class):');
       console.log(`- Principal amount: ${calculated.principalPercentage}%`);
       console.log(`- Interest amount: ${calculated.interestPercentage}%`);
-  
-      // // Verify the values match within a small tolerance (0.1%)
-      // const tolerance = 0.0001;
-      // expect(Math.abs(principalPercentage - calculated.principalPercentage)).toBeLessThan(tolerance);
-      // expect(Math.abs(interestPercentage - calculated.interestPercentage)).toBeLessThan(tolerance);
 
       // Verify the values match exactly
       expect(principalPercentage).toBe(calculated.principalPercentage);

@@ -42,11 +42,7 @@ test.describe('EMI Chart Tooltip Tests', () => {
       // Initial check of the chart state
       const initialEmiBarChart = page.locator('#emibarchart');
       console.log('Found initial emibarchart div on the page');
-          
-      // Take initial screenshot
-      // await initialEmiBarChart.screenshot({ path: `logs/initial-emibarchart-${testCase.name.replace(/\s+/g, '-').toLowerCase()}.png` });
-      // console.log(`Initial screenshot saved to logs/initial-emibarchart-${testCase.name.replace(/\s+/g, '-').toLowerCase()}.png`);
-      
+        
       // Capture series group state before pressing Enter
       const initialSeriesGroupHTML = await page.evaluate(() => {
         const seriesGroup = document.querySelector('#emibarchart .highcharts-series-group');
@@ -100,9 +96,7 @@ test.describe('EMI Chart Tooltip Tests', () => {
       const series1ChildrenCount = await page.evaluate(() => {
         const series1 = document.querySelector('#emibarchart .highcharts-series-1');
         return series1 ? series1.children.length : 0;
-      });
-      // console.log(`Number of elements in highcharts-series-1: ${series1ChildrenCount}`);
-    
+      });    
       // Set the element index to hover over (0-based)
       // let toolTipNumber = 2; // Change this number (1, 2, 3, ...) to hover over different tooltip/bar
 
@@ -113,18 +107,6 @@ test.describe('EMI Chart Tooltip Tests', () => {
       const element = page.locator('#emibarchart .highcharts-series-1 > *').nth(elementIndex);
       await element.hover({ force: true });
       console.log(`Hovered over chart element ${toolTipNumber} of ${series1ChildrenCount}`);
-    
-      // Save the HTML content of #emibarchart
-      // const emiBarChart = page.locator('#emibarchart');
-      // const emiBarChartHTML = await emiBarChart.evaluate(el => el.outerHTML);
-      // const htmlPath = `logs/emibarchart-hover-${toolTipNumber}.html`;
-      // await fs.promises.writeFile(htmlPath, emiBarChartHTML);
-      // console.log(`HTML saved to ${htmlPath}`);
-    
-      // Take screenshot of the entire emibarchart
-      // const screenshotPath = `logs/emibarchart-hover-${toolTipNumber}.png`;
-      // await emiBarChart.screenshot({ path: screenshotPath });
-      // console.log(`Screenshot saved to ${screenshotPath}`);
     
       // Wait for tooltip to be visible
       const tooltip = page.locator('#emibarchart .highcharts-tooltip');
@@ -184,10 +166,6 @@ test.describe('EMI Chart Tooltip Tests', () => {
       // If we get here, both values matched
         console.log('\n✅ All values matched successfully!');
       }
-      // // Take screenshot of the tooltip
-      // const tooltipScreenshotPath = `logs/emibarchart-tooltip-${testCase.name.replace(/\s+/g, '-').toLowerCase()}.png`;
-      // await tooltip.screenshot({ path: tooltipScreenshotPath });
-      // console.log(`\nTooltip screenshot saved to ${tooltipScreenshotPath}`);
     });
   });
 });
