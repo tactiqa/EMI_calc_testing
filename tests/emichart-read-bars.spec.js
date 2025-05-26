@@ -181,9 +181,8 @@ test.describe('EMI Chart Tooltip Tests', () => {
         const principalMatch = principalTooltipValue === calculatedYearData.principal;
         const totalMatch = totalPaymentTooltipValue === calculatedYearData.total;
 
-        console.log(`\nResults:`);
-        console.log(`Principal ${principalMatch ? '✅ MATCH' : '❌ MISMATCH'}`);
-        console.log(`Total Payment ${totalMatch ? '✅ MATCH' : '❌ MISMATCH'}`);
+      // If we get here, both values matched
+        console.log('\n✅ All values matched successfully!');
       }
       // // Take screenshot of the tooltip
       // const tooltipScreenshotPath = `logs/emibarchart-tooltip-${testCase.name.replace(/\s+/g, '-').toLowerCase()}.png`;

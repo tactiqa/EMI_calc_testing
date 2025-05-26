@@ -1,12 +1,12 @@
 const { test, expect } = require('@playwright/test');
 const expectedUsers = require('../../fixtures/users-response.json');
 
-console.log('Starting API tests for Reqres.in...');
+console.log('Starting API tests for users response verification...');
 console.log(`Will verify ${expectedUsers.data.length} expected users`);
 
-test.describe('Reqres.in API Tests', () => {
+test.describe('Users verification API Tests', () => {
   test('GET /users should return 200 OK', async ({ request }) => {
-    console.log('\n=== Starting test: GET /users ===\n');
+    console.log('\nSending request: GET /users\n');
 
     // Make GET request to the users endpoint
     const response = await request.get('https://reqres.in/api/users?page=2', {
@@ -51,6 +51,6 @@ test.describe('Reqres.in API Tests', () => {
       }
     });
     
-    console.log('\nAll user verifications completed successfully!');
+    console.log('\n✅ All user verifications completed successfully!');
   });
 });
