@@ -5,7 +5,7 @@ const path = require('path');
 const test = baseTest.extend({
   emiCalculatorPage: async ({ browser }, use, testInfo) => {
     const projectName = testInfo.project.name || 'default';
-    const statePath = `browser_statest/state-${projectName}.json`;
+    const statePath = `fixtures/state-${projectName}.json`;
     
     // Check if state exists
     if (fs.existsSync(statePath)) {
