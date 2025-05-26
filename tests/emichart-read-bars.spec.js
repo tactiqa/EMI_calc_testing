@@ -1,5 +1,4 @@
 const { test, expect } = require('../fixtures/emiCalculator.fixture');
-const fs = require('fs');
 const { LoanCalculatorHelper } = require('../helper/personalLoanCalculatorHelper');
 
 // Test cases array
@@ -55,13 +54,10 @@ test.describe('EMI Chart Tooltip Tests', () => {
       console.log(`- Loan Tenure: ${loanTenure} years`);
       console.log(`- Start Month: ${startMonth}`);
     
-      await page.getByRole('textbox', { name: 'Personal Loan Amount' }).click();
       await page.getByRole('textbox', { name: 'Personal Loan Amount' }).fill(loanAmount);
     
-      await page.getByRole('textbox', { name: 'Interest Rate' }).click();
       await page.getByRole('textbox', { name: 'Interest Rate' }).fill(interestRate);
     
-      await page.getByRole('textbox', { name: 'Loan Tenure' }).click();
       await page.getByRole('textbox', { name: 'Loan Tenure' }).fill(loanTenure);
       await page.getByRole('textbox', { name: 'Loan Tenure' }).press('Enter');
     
@@ -140,12 +136,10 @@ test.describe('EMI Chart Tooltip Tests', () => {
       // Extract numeric value from tooltip text
       const principalText = tooltipTexts.find(text => text.includes('Principal : ₹'));
       const principalTooltipValue = principalText ? parseInt(principalText.replace(/[^0-9]/g, '')) : 0;
-  // console.log(principalTooltipValue); // Output: 107962
 
       // Extract numeric value from tooltip text
       const totalPaymentText = tooltipTexts.find(text => text.includes('Total Payment : ₹'));
       const totalPaymentTooltipValue = totalPaymentText ? parseInt(totalPaymentText.replace(/[^0-9]/g, '')) : 0;
-  // console.log(totalPaymentTooltipValue); // Output: 111111
     
       // Parse year from tooltip (format: 'Year : 2030')
       const yearMatch = tooltipTexts.find(text => text.startsWith('Year : '));

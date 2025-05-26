@@ -1,7 +1,6 @@
 const { test, expect } = require('../fixtures/emiCalculator.fixture');
 const { LoanCalculatorHelper } = require('../helper/personalLoanCalculatorHelper');
 const { setSliderValue } = require('../helper/sliderHelper');
-const fs = require('fs');
 
 // Test cases array
 const testCases = [
@@ -141,12 +140,10 @@ test.describe('EMI Chart Tooltip Test with Sliders', () => {
       // Extract numeric value from tooltip text
       const principalText = tooltipTexts.find(text => text.includes('Principal : ₹'));
       const principalTooltipValue = principalText ? parseInt(principalText.replace(/[^0-9]/g, '')) : 0;
-  // console.log(principalTooltipValue); // Output: 107962
 
       // Extract numeric value from tooltip text
       const totalPaymentText = tooltipTexts.find(text => text.includes('Total Payment : ₹'));
       const totalPaymentTooltipValue = totalPaymentText ? parseInt(totalPaymentText.replace(/[^0-9]/g, '')) : 0;
-  // console.log(totalPaymentTooltipValue); // Output: 111111
     
       // Parse year from tooltip (format: 'Year : 2030')
       const yearMatch = tooltipTexts.find(text => text.startsWith('Year : '));

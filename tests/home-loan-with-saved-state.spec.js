@@ -63,13 +63,11 @@ test.describe('EMI Calculator Tests', () => {
       // Fill in the loan parameters
       const loanAmountInput = page.getByRole('textbox', { name: 'Home Loan Amount' });
       await expect(loanAmountInput).toBeVisible();
-      await loanAmountInput.click();
+
       await page.getByRole('textbox', { name: 'Home Loan Amount' }).fill(loanAmount.toString());
  
-      await page.getByRole('textbox', { name: 'Interest Rate' }).click();
       await page.getByRole('textbox', { name: 'Interest Rate' }).fill(interestRate.toString());
 
-      await page.getByRole('textbox', { name: 'Loan Tenure' }).click();
       await page.getByRole('textbox', { name: 'Loan Tenure' }).fill(loanTermYears.toString());
 
       await page.getByRole('textbox', { name: 'Loan Tenure' }).press('Enter');
