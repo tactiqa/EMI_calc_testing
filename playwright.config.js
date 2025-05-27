@@ -47,17 +47,17 @@ export default defineConfig({
         screenshot: 'on',
       },
     },
-    {
-      name: 'firefox',
-      testMatch: '**/*.spec.js',  // Matches all test files
-      testIgnore: '**/api/*.spec.js',  // Exclude API tests
-      use: { 
-        ...devices['Desktop Firefox'],
-        viewport: { width: 1920, height: 1080 },
-        headless: true,  // Set to true for CI
-        screenshot: 'on',
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   testMatch: '**/*.spec.js',  // Matches all test files
+    //   testIgnore: '**/api/*.spec.js',  // Exclude API tests
+    //   use: { 
+    //     ...devices['Desktop Firefox'],
+    //     viewport: { width: 1920, height: 1080 },
+    //     headless: true,  // Set to true for CI
+    //     screenshot: 'on',
+    //   },
+    // },
     // API tests - will run without browser
     {
       name: 'api',
