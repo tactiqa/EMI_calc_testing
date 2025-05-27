@@ -4,20 +4,10 @@
 #   path/to/files/ @username @org/team
 
 # Default owners for everything in the repo
-* @apollo-qe @kubliza
+* @kubliza @apollo-qe
+
+# Default owners for everything in the repo
+* @kubliza @apollo-qe
 
 # Specific owners for test files
-/tests/ @test-team @your-github-username
-
-# Specific file patterns
-*.js @javascript-team
-*.yml @devops-team
-
-# You can also specify email addresses
-# /config/ @email@example.com
-
-# To specify multiple owners, separate them with spaces
-# /important/path/ @user1 @user2 @team/name
-
-# To remove an owner, use !
-# /tests/excluded/ !@user-to-exclude
+/tests/ @kubliza @apollo-qe
