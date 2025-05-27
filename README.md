@@ -96,24 +96,23 @@ npx playwright test --headed
     - Used for verifying API response structures and data validation
     
   - `state-chromium.json` - Persistent browser state for Chromium:
-    - Stores cookies, localStorage, and session data
-    - Enables faster test execution by reusing authenticated sessions
-    
+    - chromium state with consent handled (consent button is clicked)
+
   - `state-firefox.json` - Persistent browser state for Firefox:
-    - Browser-specific state file for Firefox tests
-    - Maintains separate state from Chromium for cross-browser testing
+    - firefox state with consent handled (consent button is clicked)
+
 - `helper/` - Contains helper functions and utilities:
-  - `homeLoanEMICalculator.js` - Provides utility functions for home loan EMI calculations:
+  - `homeLoanEMICalculator.js` - A helper class for home loan EMI calculations - use for test results verification
     - `calculateEMI(principal, rate, tenure)` - Calculates EMI using standard formula
     - `calculateTotalInterest(emi, principal, tenure)` - Calculates total interest paid
     - `calculateEMIDetails(principal, annualRate, years)` - Returns comprehensive loan details
 
-  - `personalLoanCalculatorHelper.js` - A helper class for personal loan payment calculations:
+  - `personalLoanCalculatorHelper.js` - A helper class for personal loan payment calculations - use for test results verification:
     - `calculateLoanPayments(amount, rate, years, startYear, startMonth)` - Calculates payment schedule
     - Handles both numeric and named months (e.g., 'Jan', 'February')
     - Returns detailed payment breakdown including principal, interest, and remaining balance
 
-  - `sliderHelper.js` - Utility for interacting with slider UI elements:
+  - `sliderHelper.js` - A helper class for interacting with slider UI elements:
     - `setSliderValue(page, selector, value, fieldName, min, max)` - Sets slider value with visual feedback
-    - Handles both direct input and slider drag interactions
+    - Handles slider drag interactions
     - Includes validation of the set value
