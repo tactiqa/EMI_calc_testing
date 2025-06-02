@@ -13,7 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir: './',  // Look for tests from the root directory
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -38,7 +38,10 @@ export default defineConfig({
     // Browser tests - will run on both Chromium and Firefox
     {
       name: 'chromium',
-      testMatch: '**/*.spec.js',  // Matches all test files
+      testMatch: [
+        'tests/**/*.spec.js',     // Tests in the tests directory
+        'tests_extra/**/*.spec.js' // Tests in the tests_extra directory
+      ],
       testIgnore: [
         '**/api/*.spec.js',  // Exclude API tests
         '**/extra-check/**',  // Exclude extra-check directory
@@ -50,20 +53,23 @@ export default defineConfig({
         screenshot: 'on',
       },
     },
-    {
-      name: 'firefox',
-      testMatch: '**/*.spec.js',  // Matches all test files
-      testIgnore: [
-        '**/api/*.spec.js',  // Exclude API tests
-        '**/extra-check/**',  // Exclude extra-check directory
-      ],
-      use: { 
-        ...devices['Desktop Firefox'],
-        viewport: { width: 1920, height: 1080 },
-        headless: true,  // Set to true for CI
-        screenshot: 'on',
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   testMatch: [
+    //     '**/*.spec.js',           // Default tests
+    //     'tests_extra/**/*.spec.js' // Additional test directory
+    //   ],
+    //   testIgnore: [
+    //     '**/api/*.spec.js',  // Exclude API tests
+    //     '**/extra-check/**',  // Exclude extra-check directory
+    //   ],
+    //   use: { 
+    //     ...devices['Desktop Firefox'],
+    //     viewport: { width: 1920, height: 1080 },
+    //     headless: true,  // Set to true for CI
+    //     screenshot: 'on',
+    //   },
+    // },
     // API tests - will run without browser
     {
       name: 'api',
