@@ -51,6 +51,9 @@ export default defineConfig({
         viewport: { width: 1920, height: 1080 },
         headless: true,  // Set to true for CI
         screenshot: 'on',
+        // launchOptions: {
+        //   slowMo: 3000
+        // }
       },
     },
     // {
@@ -68,6 +71,9 @@ export default defineConfig({
     //     viewport: { width: 1920, height: 1080 },
     //     headless: true,  // Set to true for CI
     //     screenshot: 'on',
+    //     launchOptions: {
+    //       // slowMo: 1000
+    //     }
     //   },
     // },
     // API tests - will run without browser
