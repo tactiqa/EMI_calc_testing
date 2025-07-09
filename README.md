@@ -1,4 +1,4 @@
-# Apollo Task - EMI Calculator Test Automation
+# EMI Calculator Test Automation
 
 This project contains automated tests for an EMI (Equated Monthly Installment) Calculator web application, along with API testing examples. The tests are implemented using Playwright, a modern end-to-end testing framework.
 
