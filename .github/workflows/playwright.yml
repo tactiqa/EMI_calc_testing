@@ -1,4 +1,4 @@
-name: Apollo-task Tests
+name: EMI Calculator Tests
 on:
   push:
     branches: [ main, master, testing-branch ]
