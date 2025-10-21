@@ -113,7 +113,7 @@ test.describe('EMI Calculator Tests', () => {
       expect(interestPercentage).toBe(calculated.interestPercentage);
 
       // If we get here, both values matched
-      console.log('\n✅ All values matched successfully!');
+      console.log('\n[PASS] All values matched successfully!');
 
     });
   });

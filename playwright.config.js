@@ -39,7 +39,11 @@ export default defineConfig({
     {
       name: 'chromium',
       testMatch: '**/*.spec.js',  // Matches all test files
-      testIgnore: '**/api/*.spec.js',  // Exclude API tests
+      testIgnore: [
+        // '**/api/*.spec.js',  // Exclude API tests
+        // 'tests/emichart-read-bars.spec.js',
+        // 'tests/emichart-read-bars-with-sliders.spec.js'
+      ],
       use: { 
         ...devices['Desktop Chrome'],
         viewport: { width: 1920, height: 1080 },

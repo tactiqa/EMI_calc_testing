@@ -51,6 +51,6 @@ test.describe('Users verification API Tests', () => {
       }
     });
     
-    console.log('\n✅ All user verifications completed successfully!');
+    console.log('\n[PASS] All user verifications completed successfully!');
   });
 });

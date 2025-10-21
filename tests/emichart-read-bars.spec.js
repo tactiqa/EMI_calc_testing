@@ -1,5 +1,7 @@
 const { test, expect } = require('../fixtures/emiCalculator.fixture');
 const { LoanCalculatorHelper } = require('../helper/personalLoanCalculatorHelper');
+const fs = require('fs');
+const path = require('path');
 
 // Test cases array
 const testCases = [
@@ -36,7 +38,32 @@ test.describe('EMI Chart Tooltip Tests', () => {
       // await page.waitForLoadState('networkidle');
 
       console.log('\nClicking on Personal Loan link...');
-      await page.getByRole('link', { name: 'Personal Loan' }).click();
+      const personalLoanLinks = page
+        .locator('ul.loanproduct-nav')
+        .getByRole('link', { name: 'Personal Loan', exact: true });
+      const matchingCount = await personalLoanLinks.count();
+      console.log(`Found ${matchingCount} matching "Personal Loan" links`);
+
+      if (matchingCount !== 1) {
+        const debugHtml = await page.locator('ul.loanproduct-nav').evaluate(el => {
+          const matches = Array.from(el.querySelectorAll('li a'))
+            .filter(anchor => anchor.textContent.trim().toLowerCase() === 'personal loan');
+          return matches.map(anchor => anchor.outerHTML);
+        });
+
+        const debugDir = path.resolve(__dirname, '../debug');
+        if (!fs.existsSync(debugDir)) {
+          fs.mkdirSync(debugDir, { recursive: true });
+        }
+        const debugFile = path.join(debugDir, 'personal-loan-links.html');
+        const htmlContent = Array.isArray(debugHtml) ? debugHtml.join('\n\n') : String(debugHtml);
+        fs.writeFileSync(debugFile, htmlContent, 'utf8');
+
+        throw new Error(`Expected a single "Personal Loan" link but found ${matchingCount}. ` +
+          `Saved matching elements HTML to ${debugFile}`);
+      }
+
+      await personalLoanLinks.first().click();
 
       // Initial check of the chart state
       const initialEmiBarChart = page.locator('#emibarchart');
@@ -158,7 +185,7 @@ test.describe('EMI Chart Tooltip Tests', () => {
         const totalMatch = totalPaymentTooltipValue === calculatedYearData.total;
 
       // If we get here, both values matched
-        console.log('\n✅ All values matched successfully!');
+        console.log('\n[PASS] All values matched successfully!');
       }
     });
   });
