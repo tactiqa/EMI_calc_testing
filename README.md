@@ -1,6 +1,6 @@
 # EMI Calculator Test Automation
 
-This project contains automated tests for an EMI (Equated Monthly Installment) Calculator web application, along with API testing examples. The tests are implemented using Playwright, a modern end-to-end testing framework.
+This project contains automated tests for the EMI (Equated Monthly Installment) Calculator web application available at https://emicalculator.net/, along with API testing examples. The tests are implemented using Playwright, a modern end-to-end testing framework.
 
 ## Features
 
@@ -22,7 +22,7 @@ This project contains automated tests for an EMI (Equated Monthly Installment) C
   - `home-loan-with-saved-state.spec.js` - Tests for home loan EMI calculations
   - `emichart-read-bars.spec.js` - Tests for personal loan EMI chart visualization
   - `emichart-read-bars-with-sliders.spec.js` - Tests for personal loan chart with slider interactions
-  - `api/verify-users-api.spec.js` - API test - users response verification
+  - `api/verify-users-api.spec.js` - API test hitting https://reqres.in/api for users response verification
 - `fixtures/` - Contains test fixtures, test data, and browser state files:
   - `emiCalculator.fixture.js` - Playwright test fixture for EMI Calculator tests:
     - Handles browser context setup and teardown
