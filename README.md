@@ -1,4 +1,4 @@
-# EMI Calculator Test Automation
+# EMI Calculator Test Suite / Playwright
 
 This project contains automated tests for the EMI (Equated Monthly Installment) Calculator web application available at https://emicalculator.net/, along with API testing examples. The tests are implemented using Playwright, a modern end-to-end testing framework.
 
@@ -55,3 +55,23 @@ This project contains automated tests for the EMI (Equated Monthly Installment) 
     - `setSliderValue(page, selector, value, fieldName, min, max)` - Sets slider value with visual feedback
     - Handles slider drag interactions
     - Includes validation of the set value
+
+## How to run tests localy?
+
+- **Prerequisites**
+  - Node.js 18.x or later.
+  - npm (bundled with Node.js) for dependency management.
+
+- **Install dependencies**
+  - Run `npm install` from the repository root.
+
+- **Install Playwright browsers**
+  - Execute `npx playwright install` to download the browser binaries used by the tests.
+
+- **Run the full test suite**
+  - Use `npx playwright test` to execute all tests headlessly.
+
+- **Useful variants**
+  - `npx playwright test --ui` launches the Playwright Test Runner UI for debugging.
+  - `npx playwright test tests/api/verify-users-api.spec.js` runs only the API test file.
+  - `npx playwright test --headed` opens a visible browser for interactive debugging.
